@@ -13,12 +13,6 @@ This example creates the following resources:
 - **Database**: MySQL database within the RDS instance
 - **Database Account**: Database user account with appropriate permissions
 
-## Prerequisites
-
-- Terraform >= 1.0
-- Alibaba Cloud account with appropriate permissions
-- Alibaba Cloud Provider >= 1.120.0
-
 ## Usage
 
 1. Clone this repository and navigate to the example directory:
@@ -31,19 +25,12 @@ This example creates the following resources:
    terraform init
    ```
 
-3. Create a `terraform.tfvars` file with your configuration:
-   ```hcl
-   region = "cn-hangzhou"
-   name_prefix = "my-datav"
-   db_account_password = "YourSecurePassword123!"
-   ```
-
-4. Plan the deployment:
+3. Plan the deployment:
    ```bash
    terraform plan
    ```
 
-5. Apply the configuration:
+4. Apply the configuration:
    ```bash
    terraform apply
    ```
